@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
+
+    <title>World Clock Project</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a href ="/">
+        <h1>World Clock</h1>
+        </a>
+      <select id="city">
+        <option value="">Select a City</option>
+        <option value="current">My current location</option>
+        <option value="Europe/London">London💂🏼</option>
+        <option value="Europe/Rome">Rome🏛️</option>
+        <option value="America/Los_Angeles">Las Vegas🎰</option>
+      </select>
+      <div id="cities">
+        <div class="city" id="manchester">
+          <div>
+            <h2>Manchester</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="venice">
+          <div>
+            <h2>Venice</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="new-york">
+          <div>
+            <h2>New York</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <footer>
+      Open sourced on
+      <a href="https://github.com/chandn33/world-clock" target="_blank">
+        GitHub</a
+      >
+      | Coded by Chandni Patel🌻
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
