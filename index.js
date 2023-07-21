@@ -1,11 +1,11 @@
 setInterval(function () {
-  let manchesterElement = document.querySelector("#manchester");
-  let manchesterDateElement = manchesterElement.querySelector(".date");
-  let manchesterTimeElement = manchesterElement.querySelector(".time");
-  let manchesterTime = moment().tz("Europe/London");
+  let leedsElement = document.querySelector("#leeds");
+  let leedsDateElement = leedsElement.querySelector(".date");
+  let leedsTimeElement = leedsElement.querySelector(".time");
+  let leedsTime = moment().tz("Europe/London");
 
-  manchesterDateElement.innerHTML = manchesterTime.format("ddd Do MMMM yyyy");
-  manchesterTimeElement.innerHTML = manchesterTime.format(
+  leedsDateElement.innerHTML = leedsTime.format("ddd Do MMMM yyyy");
+  leedsTimeElement.innerHTML = leedsTime.format(
     "h:mm:ss [<small>]A[</small>]"
   );
 
